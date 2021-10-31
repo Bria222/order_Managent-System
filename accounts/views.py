@@ -8,6 +8,8 @@ from .filters import OrderFilter
 
 def registerPage(request):
 	form = UserCreationForm()
+	if form.is_valid()
+		form.save()
 	context = {'form':form}
 	return render(request,'accounts/register.html',context)
 
